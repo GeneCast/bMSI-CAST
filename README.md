@@ -10,15 +10,15 @@ Version 0.10
 Usage: perl msicast.pl [options]
 
 ## Options
-`-database` \<string\> the directory that contains baseline databases.  
-`-bam` \<string\> the path of input BAM file.  
-`-flank` \<int\> spanning reads are defined as fully covering the coordinates of the microsatellite in reference plus $flank bp in both 5’ and 3’ directions, default=2.  
-`-num` \<int\> the minimum allele supporting reads post-deduplication, default=2.  
-`-minsize` \<int\> minimum family size consdiered during deduplication, default=1.  
-`-quality` \<int\> minimum mapping quality, default=1.  
-`-mode` \<string\> available modes are 'DelRatio' and 'KLD', default=DelRatio.  
-`-outdir` \<string\> output directory.  
-`-prefix` \<string\> prefix for output files.  
+-`database` \<string\> the directory that contains baseline databases.  
+-`bam` \<string\> the path of input BAM file.  
+-`flank` \<int\> spanning reads are defined as fully covering the coordinates of the microsatellite in reference plus `flank` bp in both 5’ and 3’ directions, default=2.  
+-`num` \<int\> the minimum allele supporting reads post-deduplication, default=2.  
+-`minsize` \<int\> minimum family size consdiered during deduplication, default=1.  
+-`quality` \<int\> minimum mapping quality, default=1.  
+-`mode` \<string\> available modes are 'DelRatio' and 'KLD', default=DelRatio.  
+-`outdir` \<string\> output directory.  
+-`prefix` \<string\> prefix for output files.  
  
 # Example
 An example command to run MSI detection on a single pre-deduplication BAM is:
