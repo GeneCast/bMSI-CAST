@@ -23,7 +23,7 @@ Usage: perl msicast.pl [options]
 # Example
 An example command to run MSI detection on a single pre-deduplication BAM is:
 ```
-perl $0 -database <database> -bam result/sample20171207-B_I25.sorted.mkdup.realign.bam -flank 2 -num 2 -minsize 1 -quality 1 -mode DelRatio -outdir MSI -prefix sample20171207-B_I25
+perl $0 -database <database> -bam `bam` -flank 2 -num 2 -minsize 1 -quality 1 -mode DelRatio -outdir MSI -prefix `prefix`
 ```
 The program takes a pre-deduplication BAM as input, perform realignment, duplication removal, call loci-level MSI status and sample-level MSI status.
 
