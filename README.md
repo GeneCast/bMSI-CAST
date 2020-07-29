@@ -10,7 +10,7 @@ Version 0.10
 Usage: perl msicast.pl [options]
 
 ## Options
--database <string> the directory that contains baseline databases
+-`database` <string> the directory that contains baseline databases
 -bam <string> the path of input BAM file
 -flank <int> spanning reads are defined as fully covering the coordinates of the microsatellite in reference plus $flank bp in both 5’ and 3’ directions. default=2
 -num <int> the minimum allele supporting reads post-deduplication, default=2
@@ -28,16 +28,16 @@ perl $0 -database <database> -bam result/sample20171207-B_I25.sorted.mkdup.reali
 The program takes a pre-deduplication BAM as input, perform duplication removal, call loci-level MSI status and call sample-level MSI status.
 
 Output files include:
-1. <prefix>.result.txt
+1. `prefix`.result.txt
 Each entry contains spanning reads information (readID, microsatellite sequence, read sequence, CIGAR and loci name) from the input BAM file.
  
-2. <prefix>.DUP.txt
+2. `prefix`.DUP.txt
 Each row contains the loci name, reference name, aligned starting position, insert size, lengths of each members pertaining to a family.
 
-3. <prefix>.stat.txt
+3. `prefix`.stat.txt
 Each row represents info. of all fragments covering a locus, including DeletionRatios/KLD score, dup-ratios, and allele length offsets compared to the germline allele and corresponding frequencies.
 
-4. <prefix>.result.txt
+4. `prefix`.result.txt
 One line sample-level MSI calling results.
 
 
