@@ -10,7 +10,7 @@ Version 0.10
 Usage: perl msicast.pl [options]
 
 ## Options
--`database` <string> the directory that contains baseline databases.
+`-database` \<string\> the directory that contains baseline databases.
 -`bam` <string> the path of input BAM file.
 -flank <int> spanning reads are defined as fully covering the coordinates of the microsatellite in reference plus $flank bp in both 5’ and 3’ directions. default=2
 -num <int> the minimum allele supporting reads post-deduplication, default=2
